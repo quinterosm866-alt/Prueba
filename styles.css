@@ -1,0 +1,99 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505; /* Negro casi puro */
+    color: #e0e0e0; /* Gris claro para no cansar la vista */
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo terminal/código */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenedor-nodo {
+    max-width: 800px;
+    background: #111;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+}
+
+/* Estilos de encabezados */
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Ligero brillo */
+}
+
+h2 {
+    color: #00ffff; /* Cian tecnológico */
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Estilos de párrafo */
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más legible para el cuerpo */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+p em {
+    color: #00ffff;
+    font-style: normal;
+}
+
+/* Contenedor de opciones */
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+/* Estilos de enlaces (Botones) */
+a.opcion-link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #555;
+    padding: 15px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto Hover en los enlaces */
+a.opcion-link:hover {
+    background-color: #00ffff;
+    color: #000000;
+    border-color: #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Pequeño detalle visual de "interfaz interactiva" al hacer clic */
+a.opcion-link:active {
+    transform: scale(0.98);
+}
